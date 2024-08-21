@@ -1,0 +1,29 @@
+[
+{
+    "id": 2,
+    "name": "Elden Ring",
+    "genre": "OffRPG",
+    "platform": "PC/CONSOLE",
+    "releaseDate": "10-02-2992",
+    "rating": 10
+    
+  },
+  {
+    "id": 3,
+    "name": "Minecraft",
+    "genre": "Sandbox",
+    "platform": "PC/CONSOLE",
+    "releaseDate": "18-10-1933",
+    "rating": 10
+    
+  },
+  {
+    "id": 4,
+    "name": "RagnarokOnline",
+    "genre": "MMMORPG",
+    "platform": "PC",
+    "releaseDate": "08-08-2002",
+    "rating": 10
+    
+  }
+]
