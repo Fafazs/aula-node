@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    color: #444;
+    margin-bottom: 40px;
+}
+
+/* Estilo do catálogo */
+.catalogo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Estilo dos cartões de jogos */
+.jogo-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.jogo-card:hover {
+    transform: scale(1.05);
+}
+
+/* Estilo para o título do jogo */
+.jogo-card h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Estilo para a descrição do jogo */
+.jogo-card p {
+    margin: 5px 0;
+    color: #666;
+}
+
+/* Estilo para melhorar a aparência das informações */
+.jogo-card p strong {
+    color: #333;
+    font-weight: bold;
+}
+
+/* Media Query para dispositivos móveis */
+@media (max-width: 600px) {
+    .catalogo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .jogo-card {
+        width: 100%;
+        max-width: 350px;
+    }
+}
+
+.add-game-form {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.add-game-form div {
+    margin-bottom: 15px;
+}
+
+.add-game-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.add-game-form input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.add-game-form button {
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+.add-game-form button:hover {
+    background-color: #218838;
+}
+
+/* Estilo do catálogo */
+.catalogo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Jogos</title>
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+    <h1>Catálogo de Jogos</h1>
+
+    <!-- Formulário para adicionar um novo jogo -->
+    <form action="/games" method="POST" class="add-game-form">
+        <div>
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+            <label for="genre">Gênero:</label>
+            <input type="text" id="genre" name="genre" required>
+        </div>
+        <div>
+            <label for="platform">Plataforma:</label>
+            <input type="text" id="platform" name="platform" required>
+        </div>
+        <div>
+            <label for="releaseDate">Data de Lançamento:</label>
+            <input type="date" id="releaseDate" name="releaseDate" required>
+        </div>
+        <div>
+            <label for="rating">Nota:</label>
+            <input type="number" id="rating" name="rating" required min="1" max="10">
+        </div>
+        <button type="submit">Adicionar Jogo</button>
+    </form>
+
+    <!-- Lista de jogos -->
+    <div class="catalogo">
+        <% games.forEach(function(game) { %>
+            <div class="jogo-card">
+                <h2><%= game.name %></h2>
+                <p>Id: <%= game.id %></p>
+                <p>Gênero: <%= game.genre %></p>
+                <p>Plataforma: <%= game.platform %></p>
+                <p>Data de Lançamento: <%= game.releaseDate %></p>
+                <p>Nota: <%= game.rating %></p>
+            </div>
+        <% }) %>
+    </div>
+</body>
+</html>
